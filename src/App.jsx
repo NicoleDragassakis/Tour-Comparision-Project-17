@@ -1,20 +1,13 @@
-import React, { useState } from 'react'
-import Gallery from './Gallery'; //importing the gallery component
-import './App.css'
+import React from 'react';
+import Gallery from './components/Gallery'; // Import the Gallery components
 
-function App() {
-  const [app, setApp] = useState({});
+const App = () => {
   return (
     <div>
-      <header>
-        <h1>Tour Comparision Project</h1>
-      </header>
-
-    <main>
-      <Gallery/> {/* Rendering*/}
-    </main>
+      <h1>Tour Comparison App</h1>
+      <Gallery />
     </div>
   );
-}
+};
 
-export default App
+export default App;
