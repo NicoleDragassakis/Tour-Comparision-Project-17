@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './APP.css';
 function Gallery() {
     const [tours, setTours] = useState([]);  // Holds the fetched tour data
     const [loading, setLoading] = useState(true);  // Indicates if data is being fetched
@@ -44,7 +44,7 @@ function Gallery() {
 
     // Display error message 
     if (error) {
-        return <div>{error}</div>;
+        return <div>error</div>;
     }
 
     return (
