@@ -10,7 +10,7 @@ function Gallery() {
         fetch('https://www.course-api.com/react-tours-project')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok'); // Handle non-2xx responses
+                    throw new Error('Network response error');
                 }
                 return response.json();
             })
